@@ -81,7 +81,7 @@ Answer the following questions based on your understanding of Python programming
    To deactivate, simply type deactivate.
 
 3. Python Syntax and Semantics:
-   - Write a simple Python program that prints "Hello, World!" to the console. Explain the basic syntax elements used in the program.
+   Write a simple Python program that prints "Hello, World!" to the console. Explain the basic syntax elements used in the program.
    print("Hello, World!")
    The print() function is used to output text to the console.
    Strings in Python are enclosed in either single or double quotes.
@@ -89,7 +89,7 @@ Answer the following questions based on your understanding of Python programming
    Comments start with # and are used for documentation or explanation within the code.
 
 4. Data Types and Variables:
-   - List and describe the basic data types in Python. Write a short script that demonstrates how to create and use variables of different data types.
+   List and describe the basic data types in Python. Write a short script that demonstrates how to create and use variables of different data types.
 
    Integer (int):
    Represents whole numbers, positive or negative, without any decimal point.
@@ -119,29 +119,14 @@ Answer the following questions based on your understanding of Python programming
    Represents a collection of key-value pairs, where each key is associated with a value.
    Example: person = {'name': 'Alice', 'age': 30}
 
-   python code
-   # Integer
    x = 10
-
-   # Floating-point
    y = 3.14
-
-   # String
    name = "John"
-
-   # Boolean
    is_active = True
-
-   # List
    numbers = [1, 2, 3, 4, 5]
-
-   # Tuple
    coordinates = (10, 20)
-
-   # Dictionary
    person = {'name': 'Alice', 'age': 30}
 
-   # Printing the variables
    print("Integer:", x)
    print("Floating-point:", y)
    print("String:", name)
@@ -152,7 +137,7 @@ Answer the following questions based on your understanding of Python programming
 
 
 5. Control Structures:
-   - Explain the use of conditional statements and loops in Python. Provide examples of an `if-else` statement and a `for` loop.
+   Explain the use of conditional statements and loops in Python. Provide examples of an `if-else` statement and a `for` loop.
 
    Conditional statements and loops are fundamental control structures in Python, allowing you to execute code conditionally based on certain conditions or to repeat code multiple times.
 
@@ -194,18 +179,16 @@ Answer the following questions based on your understanding of Python programming
 
 
 6. Functions in Python:
-   - What are functions in Python, and why are they useful? Write a Python function that takes two arguments and returns their sum. Include an example of how to call this function.
+   What are functions in Python, and why are they useful? Write a Python function that takes two arguments and returns their sum. Include an example of how to call this function.
 
    Functions in Python are blocks of reusable code that perform a specific task. They allow you to break down your program into smaller, modular components, making your code more organized, readable, and maintainable. Functions also promote code reusability and abstraction, as you can use the same function multiple times without having to rewrite the same code.
-   # Call the add_numbers function and store the result in a variable
+   
    result = add_numbers(3, 5)
-
-   # Print the result
    print("Sum:", result)
 
 
 7. Lists and Dictionaries:
-   - Describe the differences between lists and dictionaries in Python. Write a script that creates a list of numbers and a dictionary with some key-value pairs, then demonstrates basic operations on both.
+   Describe the differences between lists and dictionaries in Python. Write a script that creates a list of numbers and a dictionary with some key-value pairs, then demonstrates basic operations on both.
 
    Lists:
    Lists are ordered collections of items.
@@ -222,38 +205,29 @@ Answer the following questions based on your understanding of Python programming
    Example: person = {'name': 'Alice', 'age': 30}
 
    Script Demonstrating Basic Operations:
-   # Create a list of numbers
+   
    numbers = [1, 2, 3, 4, 5]
-
-   # Create a dictionary with key-value pairs
    person = {'name': 'Alice', 'age': 30, 'city': 'New York'}
-
-   # Accessing elements
    print("First number in the list:", numbers[0])
    print("Name of the person:", person['name'])
-
-   # Modifying elements
    numbers[0] = 10
    person['age'] = 25
 
    print("Modified list:", numbers)
    print("Modified dictionary:", person)
 
-   # Adding elements
    numbers.append(6)
    person['gender'] = 'Female'
 
    print("List after adding an element:", numbers)
    print("Dictionary after adding a key-value pair:", person)
 
-   # Removing elements
    numbers.remove(3)
    del person['city']
 
    print("List after removing an element:", numbers)
    print("Dictionary after removing a key-value pair:", person)
 
-   # Iterating over elements
    print("Iterating over list:")
    for num in numbers:
       print(num)
@@ -263,23 +237,19 @@ Answer the following questions based on your understanding of Python programming
       print(key, ":", value)
 
 8. Exception Handling:
-   - What is exception handling in Python? Provide an example of how to use `try`, `except`, and `finally` blocks to handle errors in a Python script.
+   What is exception handling in Python? Provide an example of how to use `try`, `except`, and `finally` blocks to handle errors in a Python script.
 
    Exception handling in Python allows you to gracefully handle errors or exceptions that occur during the execution of a program. It prevents the program from crashing and allows you to take appropriate action when an error occurs.
 
    Example of Exception Handling using try, except, and finally Blocks:
 
    try:
-      # Code that may raise an exception
       x = 10 / 0
    except ZeroDivisionError:
-      # Handle the specific exception (ZeroDivisionError)
       print("Cannot divide by zero!")
    except Exception as e:
-      # Handle any other exception
       print("An error occurred:", e)
    finally:
-      # Code that will be executed regardless of whether an exception occurred
       print("This block is always executed, regardless of whether an exception occurred.")
    Try, except, and finally blocks are used for exception handling.
    The try block contains the code that may raise an exception.
@@ -302,11 +272,8 @@ Answer the following questions based on your understanding of Python programming
    Packages allow you to organize modules into namespaces, making it easier to manage large codebases.
 
    import math
-   # Using a function from the math module
    result = math.sqrt(16)
    print("Square root of 16 is:", result)
-
-   # Using a constant from the math module
    pi_value = math.pi
    print("Value of pi is:", pi_value)
 
@@ -319,7 +286,6 @@ Answer the following questions based on your understanding of Python programming
    Reading from a File
    Here's a script that reads the content of a file and prints it to the console:
 
-   # Reading from a file
    def read_file(file_path):
       try:
          with open(file_path, 'r') as file:
@@ -328,21 +294,17 @@ Answer the following questions based on your understanding of Python programming
       except FileNotFoundError:
          print(f"The file {file_path} does not exist.")
 
-   # Example usage
    file_path = 'example.txt'
    read_file(file_path)
    
-
    Writing to a File
    Here's a script that writes a list of strings to a file:
 
-   # Writing to a file
    def write_to_file(file_path, lines):
       with open(file_path, 'w') as file:
          for line in lines:
                file.write(line + '\n')
 
-   # Example usage
    file_path = 'output.txt'
    lines = ['Hello, World!', 'Python is great!', 'File handling in Python.']
    write_to_file(file_path, lines)
